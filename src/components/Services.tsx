@@ -1,9 +1,20 @@
 import { useEffect, useState } from 'react'
 
+import browsImage from '../assets/services/service-brow.jpg'
+import hairImage from '../assets/services/service-hair.jpg'
+import makeupImage from '../assets/services/service-makeup.jpg'
+import nailsImage from '../assets/services/service-nails.jpg'
 import { defaultServices } from '../data/defaultServices'
 import { listenServices, seedServicesIfEmpty } from '../lib/servicesApi'
 import type { ServiceCategory } from '../types/service.type'
 import { useLanguage } from './LanguageContext'
+
+const serviceImages: Record<string, string> = {
+	hair: hairImage,
+	makeup: makeupImage,
+	nails: nailsImage,
+	brows: browsImage
+}
 
 type ServicesProps = {
 	onBookingClick: (service: string) => void
@@ -39,7 +50,7 @@ export function Services({ onBookingClick }: ServicesProps) {
 						>
 							<div className="service-image">
 								<img
-									src={category.image}
+									src={serviceImages[category.id]}
 									alt={category.title[lang]}
 								/>
 							</div>
