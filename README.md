@@ -46,5 +46,5 @@ Booking requests are sent directly to Telegram using Bot API.
 
 ## LIVE
 
-Live Demo: [link]()
-Portfolio: [link]()
+Live Demo: [link](https://beuty-salon-bella.vercel.app/)
+Portfolio: [link](https://portfolio-v2ke.vercel.app/en/projects/bella-beauty-salon)
