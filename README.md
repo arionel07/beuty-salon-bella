@@ -1,73 +1,50 @@
-# React + TypeScript + Vite
+# BeLLa Beauty Salon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern premium beauty salon website with multilingual support, Firebase CMS and online booking system.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Responsive modern UI
+- Russian / Romanian languages
+- Firebase Firestore CMS
+- Admin panel for services management
+- Telegram booking notifications
+- Gallery slider
+- Smooth animations and modal windows
+- Dynamic services from database
+- Mobile-first responsive layout
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- Firebase Firestore
+- CSS
+- Telegram Bot API
 
-## Expanding the ESLint configuration
+## 📱 Functionalities
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Client Side
+- Browse salon services
+- Switch languages
+- View gallery
+- Google Maps integration
+- Book services online
+- Modal booking forms
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Admin Panel
+- Add/edit/delete services
+- Manage RU/RO translations
+- Dynamic realtime updates
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🔥 Firebase
+The project uses Firebase Firestore as CMS storage.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📬 Booking System
+Booking requests are sent directly to Telegram using Bot API.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## LIVE
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Live Demo: [link]()
+Portfolio: [link]()
