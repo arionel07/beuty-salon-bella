@@ -1,4 +1,7 @@
+import { useLanguage } from './LanguageContext'
+
 export function Map() {
+	const { t } = useLanguage()
 	return (
 		<section
 			className="map"
@@ -6,11 +9,11 @@ export function Map() {
 		>
 			<div className="map-container">
 				<div className="map-header">
-					<h2 className="map-title">Ждем Вас в гости</h2>
+					<h2 className="map-title">{t.map.title}</h2>
 
 					<div className="map-info">
-						<p>Ежедневно: 10:00 - 21:00</p>
-						<p>Strada Kiev 14/1, Chișinău</p>
+						<p>{t.map.hours}</p>
+						<p>{t.map.address}</p>
 					</div>
 				</div>
 

@@ -39,6 +39,11 @@ export const translations = {
 			serviceRu: 'Услуга RU',
 			serviceRo: 'Услуга RO',
 			price: 'Цена'
+		},
+		map: {
+			title: 'Ждём вас в гости',
+			hours: 'Ежедневно: 10:00 - 21:00',
+			address: 'Strada Kiev 14/1, Chișinău'
 		}
 	},
 
@@ -80,6 +85,11 @@ export const translations = {
 			serviceRu: 'Serviciu RU',
 			serviceRo: 'Serviciu RO',
 			price: 'Preț'
+		},
+		map: {
+			title: 'Vă așteptăm cu drag',
+			hours: 'Zilnic: 10:00 - 21:00',
+			address: 'Strada Kiev 14/1, Chișinău'
 		}
 	}
 }

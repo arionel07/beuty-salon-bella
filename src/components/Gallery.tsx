@@ -128,10 +128,10 @@ export function Gallery() {
 								} as React.CSSProperties
 							}
 						>
-							{galleryItems.map(item => (
+							{galleryItems.map((item, i) => (
 								<article
 									className="gallery-slide"
-									key={item.title.ru}
+									key={i}
 								>
 									<div className="gallery-card">
 										<img
